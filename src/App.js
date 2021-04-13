@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Weather from './components/weather.components';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -53,6 +53,8 @@ class App extends React.Component {
       case rangeId >= 701 && rangeId <= 781:
         this.setState({icon:this.weatherIcon.Atmosphere})
         break;
+        default:
+        this.setState({icon:this.weatherIcon.Atmosphere})
     }
   }
 
